@@ -25,7 +25,7 @@ In this initial release of the Migrate-to-HPE-Synergy tool, there are several co
 
 The Migrate-to-HPE-Synergy tool was initially tested using a recent HPE custom ESXi image installed on the C7000 blades.  This custom image contains all drivers for both the BL460c Gen9 source blades and the target Synergy compute modules.
 
-It may be possible to use this tool to in Microsoft Windows or Linux environments provided the necessary Synergy drivers are injected in the OS image prior to migration.  These use cases have not yet been tested.
+It may be possible to use this tool in Microsoft Windows or Linux environments provided the necessary Synergy drivers are injected in the OS image prior to migration.  These use cases have not yet been tested.
 
 ## Configuration Parameters
 
