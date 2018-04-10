@@ -4,6 +4,9 @@ The Migrate-to-HPE-Synergy tool is designed to help Hewlett Packard Enterprise S
 
 The primary use case for this tool is to automate the creation of HPE Synergy Server Profiles with the virtual MAC addresses and virtual Fibre Channel WWNN/WWPN IDs used by the existing ProLiant blades when booting from SAN.
 
+## How to use the tool
+The Migrate-to-HPE-Synergy tool consists of a PowerShell script and a configuration file. The PowerShell script leverages version 4 of the HPE OneView PowerShell library found here: https://github.com/HewlettPackard/POSH-HPOneView. It is strongly recommended to use the latest version of the PowerShell library to take advantage of the latest features, new OneView/Synergy capabilities, and defect fixes.
+
 ## Background
 
 This tool was developed in response to a customer request to help them migrate their legacy ProLiant blade environment to a new HPE Synergy environment as quickly and easily as possible.  The customer's ProLiant blades were configured to boot from SAN and the idea was to create Server Profiles on the Synergy system with the same FC WWNNs/WWPNs and boot LUN information.  In doing so, the customer would not have to touch the storage systems or change the FC switch zoning rules to allow the new Synergy compute modules to boot from the existing boot disks. 
