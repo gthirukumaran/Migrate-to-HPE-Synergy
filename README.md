@@ -39,7 +39,7 @@ The parameters used to configure the Migrate-to-HPE-Synergy tool are contained i
     C7000_oaPassword		(Password used to log into C7000 Onboard Administrator)
     C7000_vcmUsername		(Username used to log into C7000 Virtual Connect Manager)
     C7000_vcmPassword		(Password used to log into C7000 Virtual Connect Manager)
-    Synergy_Appliance		(IP Address of Synergy Composer)
+    Synergy_ComposerIP		(IP Address of Synergy Composer)
     Synergy_Username		(Username used to log into Synergy Composer)
     Synergy_Password		(Password used to log into Synergy Composer)
     Synergy_Enclosure_Group		(Enclosure Group housing target Synergy Compute Modules)

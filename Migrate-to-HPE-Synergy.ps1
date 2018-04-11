@@ -485,7 +485,7 @@ if (-not $ConnectedSessions)
 	#$Username  = Read-Host 'Username'
 	#$Password  = Read-Host 'Password' -AsSecureString
 
-    Connect-HPOVMgmt -Hostname $Synergy_Appliance -Username $Synergy_Username -Password $Synergy_Password    
+    Connect-HPOVMgmt -Hostname $Synergy_ComposerIP -Username $Synergy_Username -Password $Synergy_Password    
 
     if (-not $ConnectedSessions)
     {
