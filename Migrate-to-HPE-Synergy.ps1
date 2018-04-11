@@ -403,7 +403,7 @@ function Create_Synergy_Server_Profiles {
         $EnclGroup             = Get-HPOVEnclosureGroup -Name $Synergy_Enclosure_Group -ErrorAction Stop
         $ServerBlade           = Get-HPOVServer -ServerHardwareType $SHT -NoProfile -ErrorAction Stop | Select-Object -First 1
         
-        if ($Synergy_Gen9_Bootmode -eq "True") {
+        if ($Synergy_Server_Hardware_Type -match "Gen9") {
             $params = @{
                 AssignmentType     = "Server";
                 Affinity           = "Bay";

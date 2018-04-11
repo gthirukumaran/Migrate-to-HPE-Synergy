@@ -45,7 +45,6 @@ The parameters used to configure the Migrate-to-HPE-Synergy tool are contained i
     Synergy_Enclosure_Group		(Enclosure Group housing target Synergy Compute Modules)
     Synergy_Server_Hardware_Type	(Server Hardware Type of target Synergy Compute Modules)
     Synergy_Power_On_Server		(Should the Synergy Compute Modules be powered on after Server Profile applied?  Values: True or False)
-    Synergy_Gen9_Bootmode		(Configure Server Bootmode on Gen9 Compute Modules?  Values: True or False)
 
 ### Override Parameters
 The Migrate-to-HPE-Synergy.conf file also includes a number of "override" parameters.  These are used in the case where the names of Ethernet or Fibre Channel networks do not match between the C7000 and Synergy environments, or where the PortID of the Ethernet or Fibre Channel adapters differs between C7000 and Synergy environments, or when the requested bandwidth values in the C7000 VC server profile need to be adjusted when creating the Synergy Server Profiles.
