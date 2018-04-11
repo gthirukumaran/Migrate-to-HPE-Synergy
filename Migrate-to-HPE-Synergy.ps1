@@ -459,7 +459,7 @@ New-Variable -Name config_file -Value .\Migrate-to-HPE-Synergy.conf -Force
 if (Test-Path $config_file) {
     Get-Content $config_file | Where-Object { !$_.StartsWith("#") -and $_ -ne "" } | Foreach-Object {
         $var = $_.Split('=')
-        New-Variable -Name $var[0].Trim() -Value $var[1].Trim() -Scope Global -Force
+        New-Variable -Name $var[0].Trim() -Value $var[1].Trim().Replace("`"","") -Scope Global -Force
     }
 } else { 
     Write-Output "Configuration file '$config_file' not found.  Exiting." | Timestamp
